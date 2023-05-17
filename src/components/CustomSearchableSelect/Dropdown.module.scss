@@ -1,0 +1,26 @@
+.dropdownWrapper {
+  position: absolute;
+  z-index: 100;
+
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: var(--size-s);
+  
+  box-shadow: var(--shadow);
+  background-color: var(--color-white);
+  border-radius: var(--size-xs);
+
+  &::-webkit-scrollbar {
+    width: var(--size-md);
+    border-radius: var(--size-xs);
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: var(--size-xs);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: var(--size-xs);
+  }
+}

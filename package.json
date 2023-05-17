@@ -1,12 +1,13 @@
 {
-  "name": "project-template",
+  "name": "motion_logic_test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://stepanovkirill.github.io/project-template/",
+  "homepage": "https://stepanovkirill.github.io/motion-logic-test/",
   "dependencies": {
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.21.0",
+    "@tanstack/react-table": "^8.9.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,6 +15,7 @@
     "@types/node": "^16.18.14",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "clsx": "^1.2.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.7.0",
@@ -24,8 +26,10 @@
     "react-router": "^6.8.2",
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
+    "react-select": "^5.7.3",
     "sass": "^1.58.3",
     "typescript": "^4.9.5",
+    "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -43,9 +47,6 @@
     }
   },
   "lint-staged": {
-    "src/**/*.scss": [
-      "stylelint scss"
-    ],
     "src/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
@@ -70,11 +71,9 @@
     ]
   },
   "devDependencies": {
+    "@types/uuid": "^9.0.1",
     "husky": "^4.3.8",
     "lint-staged": "^13.1.2",
-    "prettier": "^2.8.4",
-    "stylelint": "^15.2.0",
-    "stylelint-config-clean-order": "^5.0.0",
-    "stylelint-config-standard": "^30.0.1"
+    "prettier": "^2.8.4"
   }
 }
