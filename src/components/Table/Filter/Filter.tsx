@@ -4,7 +4,10 @@ import { Column, Table as ReactTable } from '@tanstack/react-table';
 import styles from './Filter.module.scss';
 
 interface FilterProps {
+  /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
   column: Column<any, any>;
+
+  /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
   table: ReactTable<any>;
 }
 

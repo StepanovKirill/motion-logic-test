@@ -77,6 +77,7 @@ function Table({ data, onDelete }: TableProps) {
   const handleDeleteRows = React.useCallback(() => {
     const selectedRows = table.getSelectedRowModel().flatRows;
     onDelete(selectedRows);
+    /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
     table.setRowSelection((oldRowState: RowSelectionState) => ({} as RowSelectionState));
   }, [table, onDelete]);
 
