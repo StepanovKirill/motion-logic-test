@@ -21,6 +21,11 @@
   }
 }
 
+label {
+  font: var(--font-xs);
+  margin-bottom: var(--size-s);
+}
+
 .dropdownContainer {
   position: relative;
   width: 100%;

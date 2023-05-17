@@ -1,10 +1,10 @@
-type Coodinates = {
+export type Coordinates = {
   lat: string;
   lon: string;
 };
 
 export type CityT = {
-  coords: Coodinates;
+  coords: Coordinates;
   district: string;
   name: string;
   population: number;

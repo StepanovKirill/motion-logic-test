@@ -48,13 +48,11 @@ ul > li {
   --color-white: #FFF;
   --color-black: #000;
   --shadow: 0px 2px 4px rgba(0, 0, 0, 6%), 0px 4px 6px rgba(0, 0, 0, 10%);
-  --radius-xs: 4px;
-  --radius-s: 5px;
-  --radius-md: 6px;
   --font-family: Inter, sans-serif;
   --font-xs: 400 12px/18px var(--font-family);
   --font-s: 500 14px/15px var(--font-family);
-  --font-md: 800 36px/43px var(--font-family);
+  --font-s: 500 16px var(--font-family);
+  --font-l: 800 36px/43px var(--font-family);
   --size-xxs: 1px;
   --size-xs: 2px;
   --size-s: 4px;
@@ -70,7 +68,24 @@ ul > li {
   box-sizing: border-box;
   text-overflow: ellipsis;
   line-clamp: 1;
-  width: calc(100%);
+  width: 100%;
   overflow: hidden;
   white-space: pre;
+}
+
+.input {
+  @include truncate;
+
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: var(--size-xs);
+  padding: var(--size-md);
+  height: calc(var(--size-xxl));
+  font: var(--font-s);
+  
+  &:focus{
+    box-shadow: var(--shadow);
+    outline: solid var(--size-xxs) var(--color-accent);
+  }
 }

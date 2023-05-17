@@ -5,7 +5,7 @@ import styles from './Option.module.scss';
 export type OptionT = {
   value: string;
   label: string;
-  id?: string;
+  id: string;
 };
 
 interface OptionProps {
