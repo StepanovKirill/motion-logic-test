@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <Router basename="/project-template">
+    <Router basename="/motion-logic-test">
       <App />
     </Router>
   </React.StrictMode>,
