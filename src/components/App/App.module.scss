@@ -3,7 +3,8 @@
   min-height: 100vh;
   background-color: #dadada;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
+  overflow-y: scroll;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;

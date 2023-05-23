@@ -8,10 +8,18 @@ interface ButtonProps {
   variant?: 'empty' | 'filled';
   disabled?: boolean;
   onClick: () => void;
+  className?: string;
 }
 
-function Button({ children, onClick, disabled = false, variant = 'empty' }: ButtonProps) {
+function Button({
+  children,
+  onClick,
+  disabled = false,
+  variant = 'empty',
+  className = '',
+}: ButtonProps) {
   const mergedClassName = clsx(
+    className,
     variant === 'empty' ? styles.empty : styles.filled,
     disabled ? styles.disabled : '',
   );
@@ -31,6 +39,7 @@ function Button({ children, onClick, disabled = false, variant = 'empty' }: Butt
 Button.defaultProps = {
   variant: 'empty',
   disabled: false,
+  className: '',
 };
 
 export default Button;

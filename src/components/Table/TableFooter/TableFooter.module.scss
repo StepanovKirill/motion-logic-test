@@ -1,0 +1,21 @@
+.buttonGroup {
+  display: flex;
+  column-gap: var(--size-md);
+  width: 100%;
+  align-items: center;
+  margin-bottom: var(--size-md);
+}
+
+.text {
+  display: block;
+  line-clamp: 1;
+}
+
+.inputToPage {
+  width: 50px;
+  align-self: flex-start;
+}
+
+.rowCount {
+  align-self: flex-start;
+}

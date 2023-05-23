@@ -4,23 +4,6 @@
   max-width: 250px;
 }
 
-.input {
-  @include truncate;
-
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  border-radius: var(--size-xs);
-  padding: var(--size-md);
-  height: calc(var(--size-xxl));
-  font: var(--font-s);
-  
-  &:focus{
-    box-shadow: var(--shadow);
-    outline: solid var(--size-xxs) var(--color-accent);
-  }
-}
-
 label {
   font: var(--font-xs);
   margin-bottom: var(--size-s);

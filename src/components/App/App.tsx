@@ -6,8 +6,8 @@ import CustomSearchableSelect from '../CustomSearchableSelect/CustomSearchableSe
 import useGetCities from '../../utils/useGetCities';
 import { OptionT } from '../CustomSearchableSelect/Option';
 import Button from '../Button/Button';
-import Table from '../Table/Table';
 import { CityT } from '../../types';
+import CityTable from '../CityTable/CityTable';
 
 function App() {
   const cities = useGetCities();
@@ -68,7 +68,7 @@ function App() {
           Очистить таблицу
         </Button>
       </div>
-      <Table data={tableResults} onDelete={handleDeleteRows} />
+      <CityTable data={tableResults} onDelete={handleDeleteRows} />
     </div>
   );
 }

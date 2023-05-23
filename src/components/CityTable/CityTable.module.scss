@@ -1,0 +1,28 @@
+.cityTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--size-xl);
+
+  th,
+  td {
+    white-space: nowrap;
+    padding: 0.5rem;
+  }
+
+  th {
+    background: rgba(#2f2e6f, 0.1);
+      
+    &>div {
+      font: var(--font-s);
+      padding: var(--size-s);
+      
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  tbody tr:nth-child(2n) {
+    background: rgba(#2f2e6f, 0.05);
+  }
+}
